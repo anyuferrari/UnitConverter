@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="distance">Distance</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="time">Time</string>
+    <string name="mass">Mass</string>
+
+    <string-array name="distance">
+        <item>micrometres</item>
+        <item>millimetres</item>
+        <item>centimetres</item>
+        <item>metres</item>
+        <item>kilometres</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>seconds</item>
+        <item>minutes</item>
+        <item>hours</item>
+        <item>days</item>
+        <item>years</item>
+    </string-array>
+</resources>
