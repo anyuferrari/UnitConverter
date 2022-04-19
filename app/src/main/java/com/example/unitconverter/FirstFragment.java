@@ -4,25 +4,21 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.unitconverter.databinding.FragmentFirstBinding;
-import com.example.unitconverter.databinding.FragmentSecondBinding;
 
-import java.lang.reflect.Array;
 
 public class FirstFragment extends Fragment {
 
     private FragmentFirstBinding binding;
-    private FragmentSecondBinding secondBinding;
-    Button showButton;
-    Spinner inputSpinner;
+    Button distButton;
+    Button timeButton;
+    Button massButton;
 
     @Override
     public View onCreateView(
@@ -31,7 +27,9 @@ public class FirstFragment extends Fragment {
     ) {
 
         binding = FragmentFirstBinding.inflate(inflater, container, false);
-        showButton = binding.buttonDistance;
+        distButton = binding.buttonDistance;
+        timeButton = binding.buttonTime;
+        massButton = binding.buttonMass;
         return binding.getRoot();
 
     }
@@ -39,14 +37,24 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonDistance.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String unit = showButton.getText().toString();
-                FirstFragmentDirections.ActionFirstFragmentToSecondFragment action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(unit);
-                NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(action);
-            }
+        binding.buttonDistance.setOnClickListener(view1 -> {
+            String unit = distButton.getText().toString();
+            FirstFragmentDirections.ActionFirstFragmentToSecondFragment action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(unit);
+            NavHostFragment.findNavController(FirstFragment.this)
+                    .navigate(action);
+        });
+
+        binding.buttonTime.setOnClickListener(view1 -> {
+            String unit = timeButton.getText().toString();
+            FirstFragmentDirections.ActionFirstFragmentToSecondFragment action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(unit);
+            NavHostFragment.findNavController(FirstFragment.this).navigate(action);
+        });
+
+        binding.buttonMass.setOnClickListener(view1 -> {
+            String unit = massButton.getText().toString();
+            FirstFragmentDirections.ActionFirstFragmentToSecondFragment action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(unit);
+            NavHostFragment.findNavController(FirstFragment.this)
+                    .navigate(action);
         });
     }
 

@@ -18,6 +18,10 @@
         <item>centimetres</item>
         <item>metres</item>
         <item>kilometres</item>
+        <item>inch</item>
+        <item>foot</item>
+        <item>yard</item>
+        <item>nautical mile</item>
     </string-array>
 
     <string-array name="time">
@@ -26,5 +30,14 @@
         <item>hours</item>
         <item>days</item>
         <item>years</item>
+    </string-array>
+
+    <string-array name="mass">
+        <item>milligram</item>
+        <item>gram</item>
+        <item>kilogram</item>
+        <item>ton</item>
+        <item>ounce</item>
+        <item>pound</item>
     </string-array>
 </resources>
