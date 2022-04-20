@@ -2,15 +2,22 @@
     <string name="app_name">Unit Converter</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="first_fragment_label">Unit converter</string>
+    <string name="second_fragment_label">Unit converter</string>
     <string name="distance">Distance</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_first_fragment">Select your unit</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="time">Time</string>
     <string name="mass">Mass</string>
+    <string name="low_temp">Temperature below absolute zero!</string>
+    <string name="temperature">Temperature</string>
+    <string name="energy">Energy</string>
+    <string name="velocity">Velocity</string>
+    <string name="magnitude">Magnitude</string>
+    <string name="submit">Submit</string>
+    <string name="result">Result</string>
 
     <string-array name="distance">
         <item>micrometres</item>
@@ -39,5 +46,27 @@
         <item>ton</item>
         <item>ounce</item>
         <item>pound</item>
+    </string-array>
+
+    <string-array name="temp">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+    <string-array name="energy">
+        <item>Joules</item>
+        <item>calories</item>
+        <item>kcal</item>
+        <item>kiloWatts hour</item>
+        <item>btu</item>
+    </string-array>
+
+    <string-array name="velocity">
+        <item>m/s</item>
+        <item>km/h</item>
+        <item>mph</item>
+        <item>ft/s</item>
+        <item>knot</item>
     </string-array>
 </resources>
